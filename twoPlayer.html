@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Memory Game!</h1>
+    <div class="header">
+      <span id="score">Score: <span id="turn">0</span></span>
+      <button class='start'>New Game</button>
+      <span id="best-score"><button class='bestbtn'>BestScore:</button> <span id="best">0</span></span>
+    </div> 
+    <form class="gone">
+        <div class="inputs">
+            <label class="lab" for="playerInput">How many Players? </label>
+            <input  type="number" min="1" max="3" id="playerInput">
+            <label class="lab" for="numInput">How Many Matches?</label>
+            <input type="number" id="numInput" min="8" max="12" step="2">
+            <label class="lab" for="typeInput">Card Type?</label>
+            <select class="custom-select" name="typeInput" id="typeInput">
+                <option value="select"></option>
+                <option value="color">Colors</option>
+                <option value="animal">Animals</option>
+                <!-- <option value="letter">Letters</option>
+                <option value="word">Words</option> -->
+            </select>
+        </div>
+        <br>
+        <div class="btnDiv">
+            <button>Let's Go!</button>
+        </div>
+    </form>
+    
+    <div id="game">
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
